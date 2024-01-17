@@ -10,7 +10,7 @@ namespace DAO
 {
     public class Connection
     {
-        static string chaneCnx = @"Data Source=DESKTOP-PLI0O4R\SQLEXPRESS; Database=Gestion du Stock; Integrated Security=True";
+        static string chaneCnx = @"Data Source=localhost\SQLEXPRESS; Database=Gestion du Stock; Integrated Security=True";
         static SqlConnection cnx = new SqlConnection(chaneCnx);
 
         public static SqlConnection GetInstance()
